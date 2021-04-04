@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Source/Roll.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 478.031
+margin_top = 476.852
+margin_right = 568.031
+margin_bottom = 532.852
+text = "Spin"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spin_Board" type="Node2D" parent="."]
+position = Vector2( 256, 64 )
+
+[node name="Spin_1" type="RichTextLabel" parent="Spin_Board"]
+margin_right = 64.0
+margin_bottom = 320.0
+text = "Fire"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spin_2" type="RichTextLabel" parent="Spin_Board"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 320.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spin_3" type="RichTextLabel" parent="Spin_Board"]
+margin_left = 128.0
+margin_right = 192.0
+margin_bottom = 320.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spin_4" type="RichTextLabel" parent="Spin_Board"]
+margin_left = 192.0
+margin_right = 256.0
+margin_bottom = 320.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spin_5" type="RichTextLabel" parent="Spin_Board"]
+margin_left = 256.0
+margin_right = 320.0
+margin_bottom = 320.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resource" type="RichTextLabel" parent="."]
+margin_left = 256.0
+margin_top = 16.0
+margin_right = 296.0
+margin_bottom = 56.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
